@@ -1,0 +1,38 @@
+<div class="col-sm-9">
+
+  
+  <ol class="breadcrumb">
+    <li class="active">Home</li>
+</ol>
+  
+
+    <div class="col-md-4 col-sm-6" *ngFor="let u of productdetail">
+      <div class="product">
+        <div class="image">
+          <a href="">
+            <img src="{{u.gambar}}" style ="height: 250px;width: 250px" alt="" class="img-responsive">
+          </a>
+        </div>
+        <!-- /.image -->
+        <div class="post-content">
+          <a [routerLink]="['/productdetail',u._id]">
+            <p style="text-align:center;color: black;font-size: 20px;margin-top: 10px">{{u.nama}}</p>
+          </a>
+          
+          
+        </div>
+        <!-- /.text -->
+      </div>
+      <!-- /.product -->
+    </div>
+
+
+
+
+
+    <!-- /.text -->
+  <!-- /.product -->
+</div>
+<!-- /.col-md-4 -->
+
+<!-- /.products -->
